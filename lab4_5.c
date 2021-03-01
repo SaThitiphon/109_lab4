@@ -1,16 +1,19 @@
 #include <stdio.h>
 int main()
 {
-    int g[4]={0,0,0,0},n,i,p = 1,a,b,c,d,k,j;
+    int g[4],n,i,a,b,c,d,k,j;
     scanf("%d",&n);
     int s[n];
     char r[200];
     for(i=0;i<n;i++)
     {
-        g[0] = p;
+        g[4] = (0,0,0,0);
+        g[0] = 1;
         scanf("%s",r);
-        for(j=0;r!='\0';j++)
+        for(j=0;j<200;j++)
         {
+            if(r[j]=='\0')
+                break;
             if(r[j]=='A')
             {
                 a = g[1];
@@ -59,7 +62,7 @@ int main()
                 g[4] = c;
             }
         }
-        for(i=0;i<n;i++)
+        for(j=0;j<n;j++)
         {
             for(k=0;k<4;k++)
             {
