@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     int g[4],n,i,a,b,c,d,k,j;
@@ -9,6 +10,7 @@ int main()
     {
         g[4] = (0,0,0,0);
         g[0] = 1;
+        strcpy(r," ");
         scanf("%s",r);
         for(j=0;j<200;j++)
         {
