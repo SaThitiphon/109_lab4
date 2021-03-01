@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    char a[100] = " ",b[100] = " ";
+    char a[100],b[100];
     int i=0,j=1;
     gets(a);
     b[0] = toupper(a[0]);
