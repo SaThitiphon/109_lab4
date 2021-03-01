@@ -5,14 +5,14 @@ int main()
     int g[4],n,i,a,b,c,d,k,j;
     scanf("%d",&n);
     int s[n];
-    char r[200];
+    char r[50];
     for(i=0;i<n;i++)
     {
         g[4] = (0,0,0,0);
         g[0] = 1;
         strcpy(r," ");
         scanf("%s",r);
-        for(j=0;j<200;j++)
+        for(j=0;j<50;j++)
         {
             if(r[j]=='\0')
                 break;
@@ -64,16 +64,14 @@ int main()
                 g[4] = c;
             }
         }
-        for(j=0;j<n;j++)
+        for(j=0;j<4;j++)
         {
-            for(k=0;k<4;k++)
+            if(g[j]==1)
             {
-                if(g[k]==1)
-                {
-                    s[i] = k + 1;
-                }
+                s[i] = j + 1;
             }
         }
+        
     }
     for(i=0;i<n;i++)
     {
